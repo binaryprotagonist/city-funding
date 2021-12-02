@@ -153,6 +153,12 @@ section#home .input-group {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 /* section#home button.btn.btn-default {
   background: #000aff;
   padding: 19px 40px;
