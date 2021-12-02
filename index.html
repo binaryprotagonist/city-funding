@@ -59,7 +59,7 @@
             <div class="modal-body">
        
                 <div class="login-homepage">
-                  <span>Don't have account?</span>
+                  <span>Don't have account ?</span>
                   <a  data-bs-target="#signupModal" data-bs-toggle="modal" >Create account</a>
                   <div class="formcontents">
                     <h1 class="mb-3 mt-3">Login to your account</h1>
@@ -91,7 +91,7 @@
                       <i class="fa fa-eye"></i>
                     </div>
                     <div class="forget-password">
-                        <a href="#">Forget password</a>
+                        <a href="#">Forgot Password ?</a>
                     </div>
                     <div class="btn-group">
                       <button class="btn-primary" type="submit">Login</button>
@@ -121,7 +121,7 @@
             <div class="modal-body">
        
                 <div class="login-homepage">
-                  <span>Have an account?</span>
+                  <span>Have an account ?</span>
                   <a data-bs-target="#loginModal" data-bs-toggle="modal">Sign In</a>
                   <div class="formcontents">
                     <h1 class="mb-3 mt-3">Welcome to City Funding</h1>
@@ -162,10 +162,10 @@
                       />
                       <i class="fa fa-eye"></i>
                     </div>
-                    <div class="forget-password">
-                        <a href="#">Forget password</a>
-                    </div>
-                    <div class="btn-group">
+                    <!-- <div class="forget-password">
+                      
+                  </div> -->
+                    <div class="btn-group" id="create">
                       <button class="btn-primary" type="submit">Create an account</button>
                     </div>
                     
@@ -199,7 +199,7 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="search"
+                placeholder="Search"
                 name="search"
               />
             <a  href="portfoliofilter.html" class="filterlink">   Search <i  class="fa fa-search"></i></a> 
@@ -218,8 +218,6 @@
         $('#signupModal').on('shown.bs.modal', function() {
             $('#loginModal').modal('hide');
         });
-
-
   </script>
   </body>
 </html>

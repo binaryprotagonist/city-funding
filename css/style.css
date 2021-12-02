@@ -54,7 +54,7 @@ a.navbar-brand {
   border: 1px solid #000aff;
   border-radius: 15px;
   padding: 7px 35px;
-  margin: 11px;
+  margin: 11px 0;
 }
 a.nav-link.active {
   border: 1px solid #000aff;
@@ -107,6 +107,9 @@ img.img-profile.rounded-circle {
 i.fa.fa-cog {
   font-size: 24px;
   padding: 0px 20px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 ul.dropdown-menu.show {
   box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
@@ -128,6 +131,7 @@ section#home .content small {
 }
 section#home p {
   text-align: left;
+  font-family: "SF-Pro-Display-Semibold";
 }
 section#home input.form-control {
   border: 0;
@@ -212,7 +216,7 @@ button.btn-close {
   transform: translate(0, 0);
 }
 .modal-body span {
-  margin-right: 10px;
+  margin-right: 2px;
   color: #c3c3cf;
 }
 .modal-body span a {
@@ -239,7 +243,10 @@ button.btn-close {
 .modal-body form {
   padding: 0px 45px 0px 0;
 }
-
+.login-homepage a {
+  color: #000aff !important;
+  font-family: "SF-Pro-Display-Semibold";
+}
 .modal-body input.form-control {
   border: 0;
   font-size: 12px !important;
@@ -263,6 +270,9 @@ button.btn-close {
 label.email:focus-within {
   color: #000aff !important;
 }
+div#create {
+  margin: 35px 0 0 0;
+}
 label.email,
 label.password {
   position: absolute;
@@ -278,6 +288,7 @@ label.password {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
 }
 .modal-body button.btn-primary {
   padding: 14px;
@@ -302,7 +313,7 @@ label.password {
   border-radius: 20px;
 }
 .modal-body .google-btn .btn-group a {
-  color: #000;
+  color: #000 !important;
 
   margin: 0 auto;
 }
@@ -479,9 +490,35 @@ section#table th {
 }
 section#table {
   overflow: auto;
+  position: relative;
 }
 section#table tr:nth-child(n + 3) {
   filter: blur(0.5rem);
+}
+.filter-login {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50px, 50px);
+  left: 43%;
+  text-align: center;
+}
+.filter-login h4 {
+  font-family: "SF-Pro-Display-bold";
+}
+.filter-login a {
+  border: 1px solid blue;
+  padding: 14px 24px;
+  border-radius: 15px;
+  margin: 0 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.filter-login a.filter-sign {
+  color: #000;
+}
+.filter-login a.filter-create {
+  background: blue;
+  color: #fff;
 }
 /* section#table th,
 section#table td {
@@ -517,6 +554,8 @@ td {
 }
 section#portfoliopage .table {
   margin-bottom: 0rem;
+  border-collapse: collapse;
+  border-style: hidden;
 }
 section#portfoliopage th {
   color: #adb5bd;
@@ -574,9 +613,10 @@ section#setting .billing td {
 }
 section#setting a.sideactive {
   color: #222;
+  font-weight: 600;
 }
 .sidemenu ul li {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 section#setting a {
   color: #adb5bd;
@@ -606,6 +646,16 @@ section#setting .upgrade-contents {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+}
+section#setting i.fa.fa-check-circle {
+  position: absolute;
+  right: -5px;
+  top: -4px;
+  color: #000aff;
+  font-size: 25px;
+  z-index: 9999;
+  background: #ecedee;
+  border-radius: 50%;
 }
 .swiper-button-next {
   top: 12%;
@@ -662,6 +712,7 @@ section#setting .card a {
   height: 150px;
   border-radius: 18px;
   background: #000aff;
+  border: 1px solid #000aff;
 }
 .card h5 {
   color: #fff;
@@ -676,8 +727,12 @@ div#rborder {
   border-right: 2px solid #ecedee;
   height: 100%;
 }
+div#rborder h2 {
+  font-size: 1.8rem;
+}
 div#rborder ul {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  padding-left: 1rem !important;
 }
 /* profile */
 .profile .form-group {
@@ -692,6 +747,14 @@ div#rborder ul {
   border-bottom: 2px solid #e6e6e6;
   padding: 15px 0px;
   width: 220px;
+}
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .profile label {
   font-size: 19px;
@@ -723,8 +786,8 @@ div#rborder ul {
 
 .profile .avtar i.fa.fa-pencil {
   position: absolute;
-  left: 9%;
-  top: 38%;
+  left: 8%;
+  top: 36%;
   background: #000aff;
   padding: 8px;
   color: #fff;
@@ -741,6 +804,10 @@ div#rborder ul {
 }
 .profile form {
   padding: 35px 0;
+}
+.profile form i.fa.fa-eye {
+  z-index: 9999;
+  margin: -25px;
 }
 @media (max-width: 1200px) {
   section#home {
@@ -888,6 +955,10 @@ div#rborder ul {
     box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
     margin: 8px 0;
   }
+
+  .filter-login {
+    left: 30%;
+  }
 }
 @media (max-width: 450px) {
   section#download .content {
@@ -901,5 +972,10 @@ div#rborder ul {
     border-radius: 18px;
     width: 114px;
     display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .filter-login {
+    left: 20%;
   }
 }
