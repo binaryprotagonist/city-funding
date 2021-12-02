@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Portfolio Filter</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link home"
+                aria-current="page"
+                href="portfoliopage.html"
+                >Back to Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Setting.html"
+                ><i class="fa fa-cog"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" id="headprofile">
+                <a
+                  class="d-inline-flex py-0 align-items-center"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="images/avtar.png"
+                  />
+                  <div class="profile-details d-lg-inline mr-2 text-right">
+                    <div class="fullname">Brain Inventory</div>
+                    <div class="mail">
+                      <small> abc@braininventory.com</small>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Filter Page -->
+
+    <section id="filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  name="search"
+                />
+                <button class="btn btn-default" type="submit">
+                  Look up <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="input-group" id="box-right">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Type here to filter results..."
+                  name="search"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- data table -->
+    <section id="table" class="table1">
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Owner</th>
+              <th scope="col">Title</th>
+              <th scope="col">Tenure</th>
+              <th scope="col">Address</th>
+              <th scope="col">Date Added</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bharti Airtel Limited</td>
+              <td>BB9379</td>
+              <td>Leasehold</td>
+              <td>
+                @5th Floor Permises, Belgrave House, 76 Buckingham Palce Road,
+                London, Sw1w 9TQ
+              </td>
+              <td>Nov 25 2021</td>
+              <td>
+                <a href="portfoliopage.html"><img src="images/view.png" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bharti Airtel Limited</td>
+              <td>BB9379</td>
+              <td>Leasehold</td>
+              <td>
+                @5th Floor Permises, Belgrave House, 76 Buckingham Palce Road,
+                London, Sw1w 9TQ
+              </td>
+              <td>Nov 25 2021</td>
+              <td>
+                <a href="portfoliopage.html"><img src="images/view.png" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bharti Airtel Limited</td>
+              <td>BB9379</td>
+              <td>Leasehold</td>
+              <td>
+                @5th Floor Permises, Belgrave House, 76 Buckingham Palce Road,
+                London, Sw1w 9TQ
+              </td>
+              <td>Nov 25 2021</td>
+              <td>
+                <a href="portfoliopage.html"><img src="images/view.png" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bharti Airtel Limited</td>
+              <td>BB9379</td>
+              <td>Leasehold</td>
+              <td>
+                @5th Floor Permises, Belgrave House, 76 Buckingham Palce Road,
+                London, Sw1w 9TQ
+              </td>
+              <td>Nov 25 2021</td>
+              <td>
+                <a href="portfoliopage.html"><img src="images/view.png" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bharti Airtel Limited</td>
+              <td>BB9379</td>
+              <td>Leasehold</td>
+              <td>
+                @5th Floor Permises, Belgrave House, 76 Buckingham Palce Road,
+                London, Sw1w 9TQ
+              </td>
+              <td>Nov 25 2021</td>
+              <td>
+                <a href="portfoliopage.html"><img src="images/view.png" /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

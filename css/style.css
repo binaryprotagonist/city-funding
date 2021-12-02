@@ -501,6 +501,9 @@ section#table {
 section#table tr:nth-child(n + 3) {
   filter: blur(0.5rem);
 }
+.table1 tr:nth-child(n + 3) {
+  filter: blur(0rem) !important;
+}
 .filter-login {
   position: absolute;
   top: 50%;
