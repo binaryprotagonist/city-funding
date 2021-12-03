@@ -518,7 +518,7 @@ section#table tr:nth-child(n + 3) {
   border: 1px solid blue;
   padding: 14px 24px;
   border-radius: 15px;
-  margin: 0 10px;
+  margin: 0 3px;
   font-size: 13px;
   cursor: pointer;
 }
@@ -788,15 +788,15 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 .profile .avtar img {
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
 }
 
 .profile .avtar i.fa.fa-pencil {
-  position: absolute;
-  left: 8%;
-  top: 36%;
+  position: relative;
+  right: 34px;
+  top: -34px;
   background: #000aff;
   padding: 8px;
   color: #fff;
