@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Portfolio Filter</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link sign"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+                >Create account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Filter Page -->
+
+    <section id="filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  name="search"
+                />
+                <button class="btn btn-default" type="submit">
+                  Look up <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="search-results">
+      <div class="container">
+        <a
+          class="govuk-link piwik-event"
+          data-id="advanced-company-search"
+          data-event-id="Advanced company search"
+          href="/advanced-search"
+          target="_blank"
+          >Advanced company search</a
+        >
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="companies-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#companies"
+              type="button"
+              role="tab"
+              aria-controls="companies"
+              aria-selected="false"
+            >
+              Companies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="officers-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#officers"
+              type="button"
+              role="tab"
+              aria-controls="officers"
+              aria-selected="false"
+            >
+              Officers
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="disqualifications-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#disqualifications"
+              type="button"
+              role="tab"
+              aria-controls="disqualifications"
+              aria-selected="false"
+            >
+              Disqualifications
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="column-two-thirds">
+              <article id="services-information-results">
+                <h1 class="govuk-visually-hidden">
+                  Search the register – results
+                </h1>
+                <h2 class="govuk-visually-hidden">All results</h2>
+                <ul id="results" class="results-list">
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/TzHCSvv0Z5XTFNJckktI2HgnJxU/appointments"
+                        >Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 0 - Born June 1971
+                    </p>
+                    <p>Steinacher Strasse 15, Korb, 71404, Germany</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/uEfgcuMPENBJCcfnm1zWGIKLVHQ/appointments"
+                        >Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born October 1963
+                    </p>
+                    <p>
+                      25 Bickels Yard, 151-153 Bermondsey Street, London, SE1
+                      5HA
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/sDSKizNUq5MGUoCC8dlqLezmCCU/appointments"
+                        >Alexander Solomon Chaim SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 14 - Born January 1947
+                    </p>
+                    <p>12 Colberg Place, London, United Kingdom, N16 5RB</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/DP5foUZnESQBKqdg-UuOps-9Jnk/appointments"
+                        >Dmitrii Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born November 1977
+                    </p>
+                    <p>
+                      Home Croft 17 Ramillies Avenue, Cheadle Hulme, Cheadle,
+                      Cheshire, England, SK8 7AQ
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/cY1z1P76ViN04dL2V-tzNSQGQg8/appointments"
+                        >Graham Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born July 1936
+                    </p>
+                    <p>
+                      Kings House, Greystoke Business Centre, High Street
+                      Portishead, Bristol, BS20 6PY
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/fQP1vXtDjI6S377Ai7-EdWMgFrw/appointments"
+                        >Nigel James Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>"Donard", 4 Macadam Way, Penrith, Cumbria, CA11 9HG</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/uFf7F_FQ9Jw6LPFCM866wuezavw/appointments"
+                        >William Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born October 1963
+                    </p>
+                    <p>
+                      C/O Blue Planet Shipping, 5 - 7 Ag Nikolaou Street,
+                      Piraeus, Athens, Greece
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/eKmJ-dkpjFnj8mUeRFRaJBxifwg/appointments"
+                        >SINGER GROUP INTERMEDIATE, LLC
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>
+                      11586 Sheldon Street, Sun Valley, California 91352, United
+                      States
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/gm_7NpojUqgbJf37x5uLuMfHOHc/appointments"
+                        >NPLUS1 SINGER CAPITAL MARKETS LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>One, Bartholomew Lane, London, EC2N 2AX</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/lnZKzPqBrD7dPAHRawN33fDmUnY/appointments"
+                        >NPLUS1 SINGER LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>One, Bartholomew Lane, London, EC2N 2AX</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/10893023"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-11' ]);"
+                        title="View company"
+                      >
+                        AJ SINGER CONSULTANCY LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      10893023 - Incorporated on 1 August 2017
+                    </p>
+                    <p>22 St. Peters Street, Stamford, England, PE9 2PF</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/10394606"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-12' ]);"
+                        title="View company"
+                      >
+                        ALANTRA SINGER LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      10394606 - Dissolved on 7 December 2021
+                    </p>
+                    <p>1 Bartholomew Lane, London, United Kingdom, EC2N 2AX</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/13331438"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-13' ]);"
+                        title="View company"
+                      >
+                        THE APEX SINGERS CIC
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      13331438 - Incorporated on 13 April 2021
+                    </p>
+                    <p>
+                      Flat 29 Weaver's Quay, 51 Old Mill Street, Manchester,
+                      Greater Manchester, United Kingdom, M4 6GA
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/SC348868"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-14' ]);"
+                        title="View company"
+                      >
+                        ASHLEY SINGER ROUGHCASTING LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      SC348868 - Incorporated on 19 September 2008
+                    </p>
+                    <p>
+                      31 Westdyke Gardens, Elrick, Westhill, Aberdeenshire, AB32
+                      6QS
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/12889692"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-15' ]);"
+                        title="View company"
+                      >
+                        A SINGER MANAGEMENT LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      12889692 - Incorporated on 18 September 2020
+                    </p>
+                    <p>
+                      49 Tower Cottages Weald Road, South Weald, Brentwood,
+                      England, CM14 5QJ
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/11695855"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-16' ]);"
+                        title="View company"
+                      >
+                        ASSOCIATION OF SINGER CAR OWNERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail inset">
+                      Matching previous names: <br /><span
+                        >SINGER MOTOR CLUB
+                      </span>
+                    </p>
+
+                    <p class="meta crumbtrail">
+                      11695855 - Incorporated on 26 November 2018
+                    </p>
+                    <p>
+                      Hassett House Hassett House, Hassett Street, Bedford,
+                      Bedfordshire, United Kingdom, MK40 1HA
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/05910658"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-17' ]);"
+                        title="View company"
+                      >
+                        BEN SINGER MACHINERY LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      05910658 - Incorporated on 18 August 2006
+                    </p>
+                    <p>
+                      Woolley Grange Farm, Woolley Green, Bradford On Avon,
+                      England, BA15 1TY
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/CE022845"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-18' ]);"
+                        title="View company"
+                      >
+                        THE BRITISH ASSOCIATION OF BARBERSHP SINGERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      CE022845 - Registered externally as 1080930
+                    </p>
+                    <p></p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/CE009339"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-19' ]);"
+                        title="View company"
+                      >
+                        THE CARICE SINGERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      CE009339 - Registered externally as 1170689
+                    </p>
+                    <p></p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/01607483"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-20' ]);"
+                        title="View company"
+                      >
+                        CHELLINGWORTH &amp; SINGER LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      01607483 - Incorporated on 13 January 1982 - Liquidation
+                    </p>
+                    <p>
+                      C/O Peat Marwick Mclintock, Churchill House, Regent Road
+                      Hanley, Stoke On Trent, ST1 3RG
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="companies"
+            role="tabpanel"
+            aria-labelledby="companies-tab"
+          >
+            <div class="column-two-thirds">
+              <article id="services-information-results">
+                <h1 class="govuk-visually-hidden">
+                  Search the register – results
+                </h1>
+                <h2 class="govuk-visually-hidden">All results</h2>
+                <ul id="results" class="results-list">
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/10893023"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-1' ]);"
+                        title="View company"
+                      >
+                        AJ SINGER CONSULTANCY LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      10893023 - Incorporated on 1 August 2017
+                    </p>
+                    <p>22 St. Peters Street, Stamford, England, PE9 2PF</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/10394606"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-2' ]);"
+                        title="View company"
+                      >
+                        ALANTRA SINGER LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      10394606 - Dissolved on 7 December 2021
+                    </p>
+                    <p>1 Bartholomew Lane, London, United Kingdom, EC2N 2AX</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/13331438"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-3' ]);"
+                        title="View company"
+                      >
+                        THE APEX SINGERS CIC
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      13331438 - Incorporated on 13 April 2021
+                    </p>
+                    <p>
+                      Flat 29 Weaver's Quay, 51 Old Mill Street, Manchester,
+                      Greater Manchester, United Kingdom, M4 6GA
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/SC348868"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-4' ]);"
+                        title="View company"
+                      >
+                        ASHLEY SINGER ROUGHCASTING LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      SC348868 - Incorporated on 19 September 2008
+                    </p>
+                    <p>
+                      31 Westdyke Gardens, Elrick, Westhill, Aberdeenshire, AB32
+                      6QS
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/12889692"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-5' ]);"
+                        title="View company"
+                      >
+                        A SINGER MANAGEMENT LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      12889692 - Incorporated on 18 September 2020
+                    </p>
+                    <p>
+                      49 Tower Cottages Weald Road, South Weald, Brentwood,
+                      England, CM14 5QJ
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/11695855"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-6' ]);"
+                        title="View company"
+                      >
+                        ASSOCIATION OF SINGER CAR OWNERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail inset">
+                      Matching previous names: <br /><span
+                        >SINGER MOTOR CLUB
+                      </span>
+                    </p>
+
+                    <p class="meta crumbtrail">
+                      11695855 - Incorporated on 26 November 2018
+                    </p>
+                    <p>
+                      Hassett House Hassett House, Hassett Street, Bedford,
+                      Bedfordshire, United Kingdom, MK40 1HA
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/05910658"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-7' ]);"
+                        title="View company"
+                      >
+                        BEN SINGER MACHINERY LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      05910658 - Incorporated on 18 August 2006
+                    </p>
+                    <p>
+                      Woolley Grange Farm, Woolley Green, Bradford On Avon,
+                      England, BA15 1TY
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/CE022845"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-8' ]);"
+                        title="View company"
+                      >
+                        THE BRITISH ASSOCIATION OF BARBERSHP SINGERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      CE022845 - Registered externally as 1080930
+                    </p>
+                    <p></p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/CE009339"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-9' ]);"
+                        title="View company"
+                      >
+                        THE CARICE SINGERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      CE009339 - Registered externally as 1170689
+                    </p>
+                    <p></p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/01607483"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-10' ]);"
+                        title="View company"
+                      >
+                        CHELLINGWORTH &amp; SINGER LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      01607483 - Incorporated on 13 January 1982 - Liquidation
+                    </p>
+                    <p>
+                      C/O Peat Marwick Mclintock, Churchill House, Regent Road
+                      Hanley, Stoke On Trent, ST1 3RG
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/CE008469"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-11' ]);"
+                        title="View company"
+                      >
+                        CHESTER BACH SINGERS
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      CE008469 - Registered externally as 1168644
+                    </p>
+                    <p></p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/13571497"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-12' ]);"
+                        title="View company"
+                      >
+                        CIRENCESTER SINGERS LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      13571497 - Incorporated on 17 August 2021
+                    </p>
+                    <p>39 Foxes Bank Drive, Cirencester, England, GL7 1WA</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/NI009130"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-13' ]);"
+                        title="View company"
+                      >
+                        CITRON SINGER LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      NI009130 - Incorporated on 6 November 1972
+                    </p>
+                    <p>18e Clonduff Drive, Belfast, BT6 9NR</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/09016353"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-14' ]);"
+                        title="View company"
+                      >
+                        CITRON SINGER FINANCE LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      09016353 - Incorporated on 29 April 2014
+                    </p>
+                    <p>13 Grasmere Road, London, England, N10 2DH</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/12694241"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-15' ]);"
+                        title="View company"
+                      >
+                        CRAIG SINGER LOGISTICS LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      12694241 - Incorporated on 24 June 2020
+                    </p>
+                    <p>
+                      C/O Numbermill, 2nd Floor Cassiobury House, 11-19 Station
+                      Road, Watford, England, WD17 1AP
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/10903308"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-16' ]);"
+                        title="View company"
+                      >
+                        THE CROOKED SINGERS LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      10903308 - Incorporated on 7 August 2017
+                    </p>
+                    <p>
+                      18 Westfield Gardens, Chesterfield, United Kingdom, S40
+                      3SN
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/02076471"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-17' ]);"
+                        title="View company"
+                      >
+                        CUMMINS CHU AND SINGER MANAGEMENT LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      02076471 - Incorporated on 21 November 1986
+                    </p>
+                    <p>
+                      33 Chislehurst Avenue, North Finchley, London, N12 0HU
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/04662145"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-18' ]);"
+                        title="View company"
+                      >
+                        DANIEL SINGER JEWELLERY LTD
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      04662145 - Incorporated on 11 February 2003
+                    </p>
+                    <p>30 Tutnall Drive, Solihull, B94 6SA</p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/00580602"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-19' ]);"
+                        title="View company"
+                      >
+                        DAVID SINGER CONSULTANTS LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail inset">
+                      Matching previous names: <br /><span
+                        >DAVID SINGER MOTORS
+                      </span>
+                    </p>
+
+                    <p class="meta crumbtrail">
+                      00580602 - Incorporated on 25 March 1957
+                    </p>
+                    <p>
+                      Ardmay House, Broadgate Wrangle, Boston, Lincolnshire,
+                      PE22 9BJ
+                    </p>
+                  </li>
+                  <li class="type-company">
+                    <h3>
+                      <!-- $item._score -->
+                      <a
+                        href="/company/05999770"
+                        onclick="javascript:_paq.push(['trackEvent', 'SearchSuggestions', 'SearchResult-20' ]);"
+                        title="View company"
+                      >
+                        DENNIS SINGER ASSOCIATES LIMITED
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      05999770 - Dissolved on 22 June 2021
+                    </p>
+                    <p>
+                      The Robbins Building, Albert Street, Rugby, Warwickshire,
+                      CV21 2SD
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="officers"
+            role="tabpanel"
+            aria-labelledby="officers-tab"
+          >
+            <div class="column-two-thirds">
+              <article id="services-information-results">
+                <h1 class="govuk-visually-hidden">
+                  Search the register – results
+                </h1>
+                <h2 class="govuk-visually-hidden">All results</h2>
+                <details
+                  class="govuk-details"
+                  data-module="govuk-details"
+                  role="group"
+                >
+                  <summary
+                    class="govuk-details__summary"
+                    role="button"
+                    aria-controls="details-content-0"
+                    aria-expanded="false"
+                  >
+                    <span class="govuk-details__summary-text">
+                      Did you know you can search for officers by location?
+                    </span>
+                  </summary>
+                  <div
+                    class="govuk-details__text"
+                    id="details-content-0"
+                    aria-hidden="true"
+                  >
+                    You can add location details when you search for a name,
+                    such as:
+                    <strong>John Smith location:"High Street, London"</strong>
+                    <br />or <strong>John Smith location:"CF14"</strong>
+                  </div>
+                </details>
+                <ul id="results" class="results-list">
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/TzHCSvv0Z5XTFNJckktI2HgnJxU/appointments"
+                        >Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 0 - Born June 1971
+                    </p>
+                    <p>Steinacher Strasse 15, Korb, 71404, Germany</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/uEfgcuMPENBJCcfnm1zWGIKLVHQ/appointments"
+                        >Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born October 1963
+                    </p>
+                    <p>
+                      25 Bickels Yard, 151-153 Bermondsey Street, London, SE1
+                      5HA
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/sDSKizNUq5MGUoCC8dlqLezmCCU/appointments"
+                        >Alexander Solomon Chaim SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 14 - Born January 1947
+                    </p>
+                    <p>12 Colberg Place, London, United Kingdom, N16 5RB</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/DP5foUZnESQBKqdg-UuOps-9Jnk/appointments"
+                        >Dmitrii Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born November 1977
+                    </p>
+                    <p>
+                      Home Croft 17 Ramillies Avenue, Cheadle Hulme, Cheadle,
+                      Cheshire, England, SK8 7AQ
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/cY1z1P76ViN04dL2V-tzNSQGQg8/appointments"
+                        >Graham Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born July 1936
+                    </p>
+                    <p>
+                      Kings House, Greystoke Business Centre, High Street
+                      Portishead, Bristol, BS20 6PY
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/fQP1vXtDjI6S377Ai7-EdWMgFrw/appointments"
+                        >Nigel James Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>"Donard", 4 Macadam Way, Penrith, Cumbria, CA11 9HG</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/uFf7F_FQ9Jw6LPFCM866wuezavw/appointments"
+                        >William Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born October 1963
+                    </p>
+                    <p>
+                      C/O Blue Planet Shipping, 5 - 7 Ag Nikolaou Street,
+                      Piraeus, Athens, Greece
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/5pXHsLyt8qOl7hN1cSIegU7zPSA/appointments"
+                        >Guy Alexander Edward SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>98 Mortlake Road, Richmond, Surrey, TW9 4AS</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/eKmJ-dkpjFnj8mUeRFRaJBxifwg/appointments"
+                        >SINGER GROUP INTERMEDIATE, LLC
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>
+                      11586 Sheldon Street, Sun Valley, California 91352, United
+                      States
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/gm_7NpojUqgbJf37x5uLuMfHOHc/appointments"
+                        >NPLUS1 SINGER CAPITAL MARKETS LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>One, Bartholomew Lane, London, EC2N 2AX</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/lnZKzPqBrD7dPAHRawN33fDmUnY/appointments"
+                        >NPLUS1 SINGER LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>One, Bartholomew Lane, London, EC2N 2AX</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/joM5JmjFeE9wrleuwcrA1mP_Auc/appointments"
+                        >MICHAEL SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>26 Riseldine Road, London, United Kingdom, SE23 1JU</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/HWNnhJNDE_FbPN99hJhdNza9_n4/appointments"
+                        >Dr Charles Alexander Singer CAPPER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 2 - Born June 1960
+                    </p>
+                    <p>
+                      10 Langdale Gate Witney, Oxon, United Kingdom, OX28 6EX
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/_wAzKYGIeQvbsc1_TjW9WIC1Zgw/appointments"
+                        >SINGER &amp; FRIEDLANDER SECRETARIES LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>One Hanover Street, London, W1S 1AX</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/pk5zAjiwQYtfYOzgZYaxTVkyvjw/appointments"
+                        >Nigel James Alexander SINGER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1 - Born June 1940
+                    </p>
+                    <p>"Donard", 4 Macadam Way, Penrith, Cumbria, CA11 9HG</p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/0Uxa17WHPhbfwE9pu5yu90w1TOU/appointments"
+                        >SINGER &amp; FRIEDLANDER TRUST COMPANY LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>
+                      Samuel Harris House, 5-11 Georges Street, Douglas, Isle Of
+                      Man, IM99 1SN
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/6cCjRfPIbCxUGrT04M2-YgUyxGg/appointments"
+                        >SINGER &amp; FRIEDLANDER TRUST COMPANY IOM LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 1
+                    </p>
+                    <p>
+                      Samuel Harris House, 5-11 St Georges Street, Douglas, Isle
+                      Of Man, IM1 1QB
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/hNsdkAGfz9utHHNvCXbhgvr8ZLA/appointments"
+                        >ALEXANDER COLLEGE OF HIGHER EDUCATION
+                      </a>
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 0
+                    </p>
+                    <p>
+                      23a, Woodlands Road, Isleworth, London, England, TW7 6NR
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/Uk3YKWz5ffjfBrA6_Ols65rR79A/appointments"
+                        >ALEXANDERS STRATEGIC PLANNING LTD</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 0
+                    </p>
+                    <p>
+                      Redhill Chambers, 2 High Street, Redhill, Surrey, RH1 1RL
+                    </p>
+                  </li>
+                  <li class="type-officer">
+                    <h3>
+                      <a
+                        href="/officers/wEuceSFzcmblvui8NLjFlGvA9AQ/appointments"
+                        >IAN ALEXANDER AIRD PROPERTY DEVELOPMENTS LIMITED</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Total number of appointments 5
+                    </p>
+                    <p>6th Floor, 338 Euston Road, London, NW1 3BG</p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="disqualifications"
+            role="tabpanel"
+            aria-labelledby="disqualifications-tab"
+          >
+            <div class="column-two-thirds">
+              <article id="services-information-results">
+                <h1 class="govuk-visually-hidden">
+                  Search the register – results
+                </h1>
+                <h2 class="govuk-visually-hidden">All results</h2>
+                <ul id="results" class="results-list">
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/LY-35Hs0K0hBZdPds391djgoWAQ"
+                        >Alexander Edwin AUCKLAND</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 18 April 1972 - Disqualified
+                    </p>
+                    <p>
+                      Thornton Barn, Sharow Hall Farm, Sharow, Ripon, North
+                      Yorkshire, HG4 5BP
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/Dpf-dS1kdwelKoHfyg_nVICTx74"
+                        >Alexander BUTLER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 27 September 1987 - Disqualified
+                    </p>
+                    <p>
+                      34 Parklands Drive, Fulwood, Preston, Lancashire, BR2 9SJ
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/3wogEyiiOe_WgEXEXbJAtSTaxYc"
+                        >Alexander DUTHIE</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 2 December 1975 - Disqualified
+                    </p>
+                    <p>Rowans, Meikle Wartle, Inverurie, AB51 5DE</p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/--EX8McCl916zHIQ9OaLhJeV5jY"
+                        >Alexander James GIBBONS</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 7 July 1985 - Disqualified
+                    </p>
+                    <p>
+                      Bonnie Doone, Cannock Road, Bednall, Stafford, United
+                      Kingdom, ST17 0SH
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/skXQIQZlT77G0SnbGvZGpOwOMHg"
+                        >Alexander John HENDERSON</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 10 November 1962 - Disqualified
+                    </p>
+                    <p>
+                      Easter Cardno Bungalow, Fraserburgh, United Kingdom, AB43
+                      7AH
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/-MHA1wIhe4pIbHJ8JHJk55ZJ0NM"
+                        >Alexander Robert JOHNSON</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 29 March 1981 - Disqualified
+                    </p>
+                    <p>
+                      Flat 2 Harrytown Hall, Harrytown, Romiley, Stockport,
+                      United Kingdom, SK6 3BT
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/0mkvZKUGCjOEzYrKYLMXd6Fo4mA"
+                        >Alexander Michael KARONIAS</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 5 March 1985 - Disqualified
+                    </p>
+                    <p>
+                      66 Palewell Park, East Sheen, London, United Kingdom, SW14
+                      8JH
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/pbDb1rK9pCLufiDaO8keNOp7ILs"
+                        >Alexander Charles LAURIE</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 31 January 1960 - Disqualified
+                    </p>
+                    <p>
+                      Moorhouse Farm, Moor Road, Bramhope, Leeds, West
+                      Yorkshire, United Kingdom, LS16 9HH
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/89llVDYaAhoxafNk-usefl7RNPk"
+                        >Alexander MARTIN</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 21 August 1967 - Disqualified
+                    </p>
+                    <p>7 Grove Road, Wirral, United Kingdom, CH47 2DS</p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/-orzok8J8RTneC1Aybg86ysbeCM"
+                        >Alexander Graham MOORE</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 25 April 1989 - Disqualified
+                    </p>
+                    <p>
+                      34 St. Lawrence Lane, Newton Abbot, Ashburton, United
+                      Kingdom, TQ13 7DD
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/glydRncFepRGWz7-cNVWL7m0JC0"
+                        >Alexander James Ashburner NIX</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 1 May 1975 - Disqualified
+                    </p>
+                    <p>
+                      13 St. James's Gardens, London, United Kingdom, W11 4RD
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/GRAQzHUaCWF4jyyZQ-SAW_BMKNU"
+                        >Alexander Grainger SMITH</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 27 July 1995 - Disqualified
+                    </p>
+                    <p>
+                      Winthorpe House, 47 Gainsborough Road, Winthorpe, Newark,
+                      United Kingdom, NG24 2NN
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/NJbZ5ty9z_EgUNfWXvhU-BPNF6c"
+                        >Alexander James Gair THORBEK</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 23 March 1964 - Disqualified
+                    </p>
+                    <p>
+                      Church House, Church Road, Cranbrook, Sandhurst, TN18 5NS
+                    </p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/RNk8C671lTljx0GRiGzXNZm6Stc"
+                        >Alexander Charles WARNER</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 11 September 1983 - Disqualified
+                    </p>
+                    <p>38 Sandmoor Lane, Leeds, West Yorkshire, LS17 7EA</p>
+                  </li>
+                  <li class="type-disqualification">
+                    <h3>
+                      <a
+                        href="/disqualified-officers/natural/rjULU5Rw6xv0ymYfd3VcMLD5rpY"
+                        >Alexander John WORTON</a
+                      >
+                    </h3>
+
+                    <p class="meta crumbtrail">
+                      Born on 13 November 1982 - Disqualified
+                    </p>
+                    <p>
+                      High Lodge, Corner House, Iverley, Stourbridge, United
+                      Kingdom, DY7 6PP
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login and Signup -->
+    <section id="home" class="p-0">
+      <div
+        class="modal fade"
+        id="loginModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="login-homepage">
+                <span>Don't have account ?</span>
+                <a data-bs-target="#signupModal" data-bs-toggle="modal"
+                  >Create account</a
+                >
+                <div class="formcontents">
+                  <h1 class="mb-3 mt-3">Login to your account</h1>
+                  <p class="mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus doloremque natus
+                  </p>
+                </div>
+                <form>
+                  <div class="input-group">
+                    <label class="email" for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="abc@braininventory.com"
+                      name="email"
+                      autocomplete="off"
+                    />
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="input-group">
+                    <label class="password" for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="password"
+                      name="password"
+                    />
+                    <i class="fa fa-eye"></i>
+                  </div>
+                  <div class="forget-password">
+                    <a href="#">Forgot Password ?</a>
+                  </div>
+                  <div class="btn-group">
+                    <button class="btn-primary" type="submit">Login</button>
+                  </div>
+
+                  <div class="google-btn">
+                    <p>Or Connect with:</p>
+                    <div class="btn-group">
+                      <i class="fa fa-google"></i>
+                      <a href="#">Continue with Google</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="signupModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="login-homepage">
+                <span>Have an account ?</span>
+                <a data-bs-target="#loginModal" data-bs-toggle="modal"
+                  >Sign In</a
+                >
+                <div class="formcontents">
+                  <h1 class="mb-3 mt-3">Welcome to City Funding</h1>
+                  <p class="mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus doloremque natus
+                  </p>
+                </div>
+                <form>
+                  <div class="input-group">
+                    <label class="email" for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="abc@braininventory.com"
+                      name="email"
+                      autocomplete="off"
+                    />
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="input-group">
+                    <label class="password" for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="password"
+                      name="password"
+                    />
+                    <i class="fa fa-eye"></i>
+                  </div>
+                  <div class="input-group">
+                    <label class="password" for="password"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      name="password"
+                    />
+                    <i class="fa fa-eye"></i>
+                  </div>
+                  <!-- <div class="forget-password">
+                      
+                  </div> -->
+                  <div class="btn-group" id="create">
+                    <button class="btn-primary" type="submit">
+                      Create an account
+                    </button>
+                  </div>
+
+                  <div class="google-btn">
+                    <p>Or Connect with:</p>
+                    <div class="btn-group">
+                      <i class="fa fa-google"></i>
+                      <a href="#">Continue with Google</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#loginModal").on("shown.bs.modal", function () {
+        $("#signupModal").modal("hide");
+      });
+      $("#signupModal").on("shown.bs.modal", function () {
+        $("#loginModal").modal("hide");
+      });
+    </script>
+  </body>
+</html>
