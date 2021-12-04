@@ -58,7 +58,7 @@
     <section id="filter">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <form>
               <div class="input-group">
                 <input
@@ -73,6 +73,93 @@
               </div>
             </form>
           </div>
+          <div class="col-md-6">
+            <h4>Filter By DOB</h4>
+            <div class="filter-date">
+              <div class="dropset" >
+                <button class="dropbtn">
+                  Filter By DOB
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <div class="select-filter">
+                    <form action="/action_page.php">
+                      <select name="cars" id="cars">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">08</option>
+                        <option value="10">08</option>
+                      </select>
+                    </form>
+                    <form action="">
+                      <select name="cars" id="cars">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                      </select>
+                    </form>
+                    <form action="">
+                      <select name="cars" id="cars">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="select-filter">
+              <form action="/action_page.php">
+                <select name="cars" id="cars">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">08</option>
+                  <option value="10">08</option>
+                </select>
+              </form>
+              <form action="">
+                <select name="cars" id="cars">
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                </select>
+              </form>
+              <form action="">
+                <select name="cars" id="cars">
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                </select>
+              </form>
+            </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -81,7 +168,7 @@
     <section id="search-results">
       <div class="container">
         <a
-          class="govuk-link piwik-event"
+          class="brain-link piwik-event"
           data-id="advanced-company-search"
           data-event-id="Advanced company search"
           href="/advanced-search"
@@ -155,10 +242,10 @@
           >
             <div class="column-two-thirds">
               <article id="services-information-results">
-                <h1 class="govuk-visually-hidden">
+                <h1 class="brain-visually-hidden">
                   Search the register – results
                 </h1>
-                <h2 class="govuk-visually-hidden">All results</h2>
+                <h2 class="brain-visually-hidden">All results</h2>
                 <ul id="results" class="results-list">
                   <li class="type-officer">
                     <h3>
@@ -511,10 +598,10 @@
           >
             <div class="column-two-thirds">
               <article id="services-information-results">
-                <h1 class="govuk-visually-hidden">
+                <h1 class="brain-visually-hidden">
                   Search the register – results
                 </h1>
-                <h2 class="govuk-visually-hidden">All results</h2>
+                <h2 class="brain-visually-hidden">All results</h2>
                 <ul id="results" class="results-list">
                   <li class="type-company">
                     <h3>
@@ -912,27 +999,27 @@
           >
             <div class="column-two-thirds">
               <article id="services-information-results">
-                <h1 class="govuk-visually-hidden">
+                <h1 class="brain-visually-hidden">
                   Search the register – results
                 </h1>
-                <h2 class="govuk-visually-hidden">All results</h2>
-                <details
-                  class="govuk-details"
-                  data-module="govuk-details"
+                <h2 class="brain-visually-hidden">All results</h2>
+                <!-- <details
+                  class="brain-details"
+                  data-module="brain-details"
                   role="group"
                 >
                   <summary
-                    class="govuk-details__summary"
+                    class="brain-details__summary"
                     role="button"
                     aria-controls="details-content-0"
                     aria-expanded="false"
                   >
-                    <span class="govuk-details__summary-text">
+                    <span class="brain-details__summary-text">
                       Did you know you can search for officers by location?
                     </span>
                   </summary>
                   <div
-                    class="govuk-details__text"
+                    class="brain-details__text"
                     id="details-content-0"
                     aria-hidden="true"
                   >
@@ -941,7 +1028,7 @@
                     <strong>John Smith location:"High Street, London"</strong>
                     <br />or <strong>John Smith location:"CF14"</strong>
                   </div>
-                </details>
+                </details> -->
                 <ul id="results" class="results-list">
                   <li class="type-officer">
                     <h3>
@@ -1242,10 +1329,10 @@
           >
             <div class="column-two-thirds">
               <article id="services-information-results">
-                <h1 class="govuk-visually-hidden">
+                <h1 class="brain-visually-hidden">
                   Search the register – results
                 </h1>
-                <h2 class="govuk-visually-hidden">All results</h2>
+                <h2 class="brain-visually-hidden">All results</h2>
                 <ul id="results" class="results-list">
                   <li class="type-disqualification">
                     <h3>
@@ -1649,6 +1736,7 @@
       </div>
     </section>
     <script src="js/bootstrap.min.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

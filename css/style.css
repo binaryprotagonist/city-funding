@@ -823,11 +823,19 @@ ul#pills-tab {
   border-bottom: 1px solid;
   margin-top: 1rem;
 }
-a.govuk-link.piwik-event {
+a.brain-link.piwik-event {
   text-decoration: underline;
+  font-size: 19px;
+  color: #005ea5;
 }
-h1.govuk-visually-hidden {
+h1.brain-visually-hidden {
   display: none;
+}
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #005ea5;
 }
 .results-list {
   padding: 30px 0 0;
@@ -841,10 +849,12 @@ h1.govuk-visually-hidden {
   margin: 0;
   padding-bottom: 2px;
   font-weight: normal;
+  color: #005ea5;
 }
 .results-list h3 a {
   font-weight: normal;
   text-decoration: underline;
+  color: #005ea5;
 }
 .results-list p.meta {
   padding: 0 0 3px;
@@ -858,6 +868,78 @@ h1.govuk-visually-hidden {
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 0;
+}
+.select-filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.select-filter select#cars {
+  border: 1px solid;
+  width: 100px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+}
+section#filter h6 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.select-filter form {
+  margin: 0 10px;
+}
+/* date filter */
+.filter-date {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-date a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropset {
+  float: left;
+  overflow: hidden;
+}
+
+.dropset .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 50%;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropset:hover .dropdown-content {
+  display: block;
 }
 @media (max-width: 1200px) {
   section#home {
